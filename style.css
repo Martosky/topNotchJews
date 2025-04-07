@@ -1,0 +1,30 @@
+*{
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --bg-color: #1A1A1A;
+    --hero:
+}
+body{
+    background-color: var(--bg-color);
+}
+
+header{
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    background-color: #0E0E0E;
+    
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    height: 360px;
+    background-image: url(photos/herowatch.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
