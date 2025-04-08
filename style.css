@@ -121,9 +121,13 @@ img{
 }
 .toggle-elem{
     position: absolute;
+    width: 10%;
+    height: 30px;
+    background-color: yellow;
     z-index: 2;
     top: 300px;
     left: 500px;
     color: white;
+    display: flex;
     
 }
