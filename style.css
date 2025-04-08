@@ -8,23 +8,122 @@
     --hero:
 }
 body{
+    position: relative;
     background-color: var(--bg-color);
+}
+.cart-n-mode-cont{
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    color: white;
+}
+
+.fa-cart-shopping{
+    color: white;
+    font-size: 25px;
+}
+#cart-counter{
+    position: absolute;
+    top:12px;
+    right: 28px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+    color: black;
+    z-index: 5;
 }
 
 header{
+    position: relative;
     width: 80%;
     height: auto;
     margin: 20px auto;
     background-color: #0E0E0E;
-    
+    border-radius: 20px;
 }
 
 nav{
+    position: relative;
     width: 100%;
     margin: 0 auto;
     height: 360px;
-    background-image: url(photos/herowatch.jpg);
+    background-image: url(photos/trybg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
   
+}
+img{
+    position: absolute;
+}
+
+.top-layer{
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(17, 16, 16, 0.5);
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.nav-elem{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-elem a{
+    color: white;
+    font-size: 1.rem;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: text-decoration-color 0.3s ease, text-underline-offset 0.3s ease;
+}
+
+.nav-elem a:hover{
+    text-decoration-color: gold;
+    text-underline-offset: 6px;
+    
+}
+
+.input-elem{
+   display: flex;
+   width: 30%;
+   overflow: hidden;
+   border: 1px solid rgb(105, 104, 104);
+   border-radius: 20px;
+}
+.input-elem input{
+    flex-grow: 1;
+    padding: 5px 12px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    
+}
+.input-elem button{
+    background-color: gold;
+    color: #0E0E0E;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    width: 20%;
+}
+.toggle-elem{
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    left: 500px;
+    color: white;
+    
 }
