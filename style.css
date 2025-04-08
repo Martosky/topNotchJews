@@ -1,5 +1,5 @@
 *{
-    overflow: hidden;
+    
     box-sizing: border-box;
     margin: 0;
 }
@@ -8,9 +8,13 @@
     --hero:
 }
 body{
-    position: relative;
+    
     background-color: var(--bg-color);
 }
+.cart-n-log{
+    position: relative;
+}
+
 .cart-n-mode-cont{
     position: fixed;
     right: 30px;
@@ -18,17 +22,19 @@ body{
     color: white;
 }
 
-.fa-cart-shopping{
+.same{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+    padding-right: 8px;
 }
 #cart-counter{
     position: absolute;
-    top:12px;
-    right: 28px;
-    width: 17px;
-    height: 17px;
+    top: 0;
+    right: 68px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
+    font-size: 15px;
     text-align: center;
     background-color: rgb(255, 81, 0);
     color: black;
@@ -38,10 +44,11 @@ body{
 header{
     position: relative;
     width: 80%;
-    height: auto;
+    max-height: 360px;
     margin: 20px auto;
     background-color: #0E0E0E;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 nav{
@@ -119,15 +126,10 @@ img{
     text-align: center;
     width: 20%;
 }
-.toggle-elem{
-    position: absolute;
-    width: 10%;
-    height: 30px;
-    background-color: yellow;
-    z-index: 2;
-    top: 300px;
-    left: 500px;
-    color: white;
-    display: flex;
-    
+
+main{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    height: 400px;
 }
