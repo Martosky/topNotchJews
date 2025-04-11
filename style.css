@@ -210,3 +210,18 @@ main{
     color: orange;
     margin-right: auto;
 }
+#items-in-cart{
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+}
+
+.fa-x{
+    padding: 30px;
+    font-size: 1.5em;
+    overflow-y: hidden;
+}
