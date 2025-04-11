@@ -1,14 +1,14 @@
 *{
-    
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --bg-color: #1A1A1A;
     --hero:
 }
 body{
-    
+    position: relative;
     background-color: var(--bg-color);
 }
 
@@ -142,24 +142,39 @@ main{
     width: 80%;
     margin: 10px auto;
     padding: 20px;
-    height: 400px;
+    height: auto;
+   
+}
+#card-product{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap ;
+    gap: 12px;
 }
 
 .card-pro{
     position: relative;
-    max-width: 200px;
+    max-width: 15%;
     height: auto;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0px 0px 4px 3px rgba(179, 177, 177, 0.3);
 }
+
+#card-product::after {
+  content: '';
+  display: block;              
+  flex: 0 1 15%;                
+  height: 0;                    
+  visibility: hidden;
+}
+
 .card-photo{
-    
-    max-width: 100%;
-    height: auto; 
+    width: 100%;
+    height: 220px; 
 }
  #produc-update{
     position: absolute;
@@ -167,26 +182,31 @@ main{
     left: 5px;
     padding: 3px 5px;
     border-radius: 20px;
-    background-color: rgba(95, 94, 94, 0.3);
+    background-color: white;
     color: black;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 }
 
 .product-name{
-    font-size: 18px;
-    padding: 8px;
-    display: inline;
+    font-size: 12px;
+    padding-left: 8px;
+    
 }
 .price{
     display: inline;
     font-style: italic;
     font-weight: bold;
+    padding-left: 8px;
 }
 
 .add-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     border: none;
     outline: none;
     font-size: 20px;
-    color: gold;
+    background-color: inherit;
+    color: orange;
     margin-right: auto;
 }
