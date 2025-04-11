@@ -171,9 +171,22 @@ main{
     color: black;
     font-size: 1.2rem;
 }
-#indicator{
-    width: 15px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: rgb(26, 148, 26);
+
+.product-name{
+    font-size: 18px;
+    padding: 8px;
+    display: inline;
+}
+.price{
+    display: inline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.add-btn{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: gold;
+    margin-right: auto;
 }
