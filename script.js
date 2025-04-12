@@ -1,4 +1,10 @@
-const cards = document.getElementById("card-product")
+const cards = document.getElementById("card-product");
+const totaliTemInCart = document.getElementById("total-n-item");
+const subtotal = document.getElementById("subtotal");
+const tax = document.getElementById("tax");
+const total = document.getElementById("total");
+const cartItem = document.getElementById("items-in-cart");
+const counter = document.getElementById("cart-counter")
 
 
 const cardInfo = [
